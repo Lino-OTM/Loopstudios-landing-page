@@ -1,0 +1,153 @@
+@import "./variables";
+
+.hero {
+  padding: 6.5rem 16.5rem;
+  height: 65rem;
+  background-image: url("../assets/images/desktop/image-hero.jpg");
+
+  &__nav-bar {
+    margin-bottom: 10.5rem;
+  }
+  &__logo {
+    width: 19.4rem;
+  }
+
+  &__interactive-menu-icon,
+  &__menu-icon-close {
+    display: none;
+  }
+
+  &__menu-items {
+    position: static;
+    background-color: transparent;
+    flex-direction: row;
+    padding: 0;
+    width: max-content;
+    gap: 3.1rem;
+    margin-top: 0.5rem;
+    min-height: max-content;
+  }
+
+  &__menu-item {
+    font-size: 1.55rem;
+    text-transform: lowercase;
+    font-family: $fontOne;
+
+    &::first-letter {
+      text-transform: uppercase;
+    }
+  }
+
+  // nav items
+
+  &__title {
+    font-size: 7.2rem;
+    line-height: 7.1rem;
+    max-width: 65rem;
+    padding: 3.9rem 4.1rem 2.7rem;
+    margin: 0;
+  }
+}
+
+.main-container {
+  padding: 16rem 16.3rem;
+  padding-right: 9rem;
+  padding-bottom: 15.2rem;
+  position: relative;
+
+  &__first-img {
+    margin: 0;
+    max-width: 73rem;
+  }
+
+  &__interactive-vr {
+    position: absolute;
+    right: 6.6rem;
+    top: 34rem;
+    background-color: $white;
+    padding: 9.7rem 9.6rem;
+    text-align: start;
+    max-width: 64rem;
+    z-index: 50;
+
+    &-title {
+      font-size: 4.8rem;
+      margin-bottom: 2.6rem;
+    }
+
+    &-text {
+      padding: 0;
+    }
+  }
+}
+
+.creations-section {
+  margin-top: 18rem;
+  position: relative;
+
+  &__title {
+    text-align: start;
+    font-size: 4.85rem;
+    margin-bottom: 8.2rem;
+  }
+
+  &__btn {
+    position: absolute;
+    top: -2.8rem;
+    right: 7.2rem;
+  }
+
+  &__img-wrapper {
+    width: 22.6%;
+    display: inline-block;
+    margin-right: 2.65rem;
+    margin-bottom: 2.9rem;
+    max-width: 257px;
+
+    &::after {
+      font-size: clamp(2.4rem, 2.2vw, 3.3rem);
+      bottom: 8rem;
+      left: 4rem;
+    }
+
+    &:nth-of-type(3)::after {
+      width: 15rem;
+    }
+    &:nth-of-type(5)::after {
+      width: 17rem;
+    }
+    &:nth-of-type(8)::after {
+      width: 14rem;
+    }
+  }
+}
+
+.footer {
+  flex-direction: row;
+  align-items: flex-start;
+
+  justify-content: space-between;
+  padding-inline: 16.5rem;
+  padding-top: 4.5rem;
+  padding-inline-end: 16.5rem;
+  padding-bottom: 2.5rem;
+
+  &__information-section {
+    &-logo {
+      margin-bottom: 2.5rem;
+    }
+
+    &-items {
+      display: flex;
+      gap: 3.4rem;
+      margin-bottom: 0;
+    }
+  }
+
+  &__social-media-section {
+    &-items {
+      margin-bottom: 2.3rem;
+      justify-content: flex-end;
+    }
+  }
+}
