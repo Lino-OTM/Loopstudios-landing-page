@@ -6,7 +6,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ![](/design/desktop-preview.jpg)
 
-Link: https://stunning-capybara-2eb4cf.netlify.app/
+Link: https://elegant-parfait-a1e200.netlify.app/
 
 ### Built with:
 
